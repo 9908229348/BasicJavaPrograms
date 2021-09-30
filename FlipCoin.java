@@ -4,20 +4,20 @@ import java.util.Scanner;
 
 public class FlipCoin {
 	public static void main(String[] args) {
-		final int HEADS = 1,TAILS = 0;
 		int headsCount = 0;
 		int tailsCount = 0;
 		int counter=1;
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter Number of Times you want to Flip coin :");
 		int noOfFlips = scanner.nextInt();
+		scanner.close();
 		while(counter <= noOfFlips)
 		{
 			counter++;	
-			int random = (int)Math.floor(Math.random() * 2);
-			if(random == TAILS)
+			double random = Math.random();
+			if(random < 0.5)
 				tailsCount++;
-			else if(random == HEADS)
+			else
 				headsCount++;
 		}
 		System.out.println("Number of Times Heads comes :" + headsCount);
