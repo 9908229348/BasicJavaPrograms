@@ -3,7 +3,6 @@ package basicjavaprograms;
 import java.util.Scanner;
 
 public class ArrayTwoD {
-	public class Array2D {
 		public static void main(String[] args) {
 			Scanner scanner = new Scanner(System.in);
 			System.out.println("Enter number of Rows and Columns");
@@ -31,4 +30,4 @@ public class ArrayTwoD {
 			}
 		}
 	}
-}
+
